@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Temperature converter</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1 class="heading">Celsius to Fahrenheit converter</h1>
+      <form id="temp-form">
+        <input type="text" class="input-temp" placeholder="Enter temperature in °C" />
+        <input type="submit" class="btn" value="Calculate" />
+      </form>
+
+      <div class="loader">
+        <img src="img/loading.gif" />
+      </div>
+
+      <div class="result">
+        <h2>Result in Fahrenheit</h2>
+        <input type="text" class="input-temp" id="result" disabled />
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
